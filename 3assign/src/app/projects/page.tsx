@@ -49,7 +49,7 @@ const data = [
 const Projects = () => {
   return (
     <div id="projects" className="max-w-screen-2xl container pt-10 bg-black text-pink-600">
-      <h2 className="flex justify-between items-center text-3xl font-serif mb-4">
+      <h2 className="flex justify-center text-3xl font-serif mb-4">
         My Projects
       </h2>
 
