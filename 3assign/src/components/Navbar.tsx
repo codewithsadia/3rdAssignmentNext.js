@@ -1,27 +1,20 @@
-// Functional Component with TailwindCSS classes
+import Link from 'next/link';
+import React from 'react';
+
+
 const Navbar = () => {
-    return (
-      // Main Container using TailwindCSS classes
-      <div>
-        <div id='Hero'className='min-h-screen bg-no-repeat bg-[url(/sadiaimran.png)] bg-right lg:bg-[90%] bg-cover' 
-          style={{backgroundSize: "25%"}}   // Inline style for background size adjustment
-        >
-          <div className='container grid lg:grid-cols-2 h-[calc(100vh-60px)]'>
-            <div className='flex justify-center text-8xl'>
-              <div>
-                {/* New lines and text display */}
-                <br />
-                <p>I&apos;m </p>
-                <p>Sadia</p>
-                <p>Imran</p>
-              </div>
-            </div>
-            <div className='hidden lg:block'></div>
-          </div>
-        </div>
-      </div>
-    )
-  }
-  
-  export default Navbar
-  
+  return (
+    <div className='bg-purple-600 h-12'>
+      <div className=' text-blue-900 flex justify-between items-center'>
+      <h1 className='text-xl m-2 cursor-pointer hover:text-yellow-500'>Web Developer</h1>
+      
+      <ul className='flex gap-4 mr-4 cursor-pointer'>
+        <li className= ' menuLink hover:text-yellow-500'><Link href= "/">Home</Link> </li>
+        <li className='hover:text-yellow-500'> <Link href= "/projects"> Projects </Link> </li>
+        <li className=  'hover:text-yellow-500'> <Link href= "/contact/"> Contact </Link> </li>
+    </ul>
+    </div>
+    </div>
+  )
+}
+export default Navbar

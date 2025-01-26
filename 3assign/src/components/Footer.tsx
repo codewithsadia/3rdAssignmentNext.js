@@ -63,7 +63,7 @@ const Footer = () => {
       <div className="bg-gray-800 text-gray-400 py-4">
         <div className="container mx-auto text-center">
             <h1>Create By Sadia Imran</h1>
-          <p>© 2025 Forex Blog. Keeping you informed, always.</p>
+          <p>© 2025 Portfolio. Keeping you informed, always.</p>
         </div>
       </div>
     </footer>
